@@ -39,7 +39,7 @@ git commit -m "Docs(003): Create calendar component Issue"
 ### 4. AI 기반 코드 리뷰 자동화
 
 - **자동화된 품질 보증**: Claude Code 인스턴스가 설정된 표준에 따라 코드를 자동 검토
-- **문서 자동 생성**: `markdowns/templates/CLAUDE_CODE_REVIEW_TEMPLATE.md` 템플릿 사용, `/code-reviews/{issue-number}/{commit-name}.md`로 저장
+- **문서 자동 생성**: `markdowns/review-templates/REVIEW_TEMPLATES.md` 템플릿 사용, `/code-reviews/{issue-number}/{commit-name}.md`로 저장
 - **종합적 분석**: 코드 품질, 테스트 커버리지, 아키텍처 결정, 성능 고려사항 포함
 - **지속적 개선**: 향후 AI 인스턴스를 위한 기술 부채 및 개선 기회 문서화
 - **표준 준수**: 프로젝트 코딩 표준 준수 자동 검증

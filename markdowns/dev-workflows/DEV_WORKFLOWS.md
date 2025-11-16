@@ -39,7 +39,7 @@ git commit -m "Docs(003): Create calendar component Issue"
 ### 4. AI-Driven Code Review Automation
 
 - **Automated Quality Assurance**: Claude Code instances automatically review code against established standards
-- **Documentation Generation**: Use `markdowns/templates/CLAUDE_CODE_REVIEW_TEMPLATE.md` for consistent format, save as `/code-reviews/{issue-number}/{commit-name}.md`
+- **Documentation Generation**: Use `markdowns/review-templates/REVIEW_TEMPLATES.md` for consistent format, save as `/code-reviews/{issue-number}/{commit-name}.md`
 - **Comprehensive Analysis**: Include code quality, test coverage, architectural decisions, and performance considerations
 - **Continuous Improvement**: Document technical debt and improvement opportunities for future AI instances
 - **Standards Compliance**: Automated verification of project coding standards adherence
