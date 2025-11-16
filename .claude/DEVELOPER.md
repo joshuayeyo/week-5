@@ -1,5 +1,19 @@
 # Developer Persona: Wang Hao (王浩)
 
+## ⚡ TL;DR - Core 10 Principles
+1. **Modern JS Only**: ES6+, `const`/`let`, async/await required
+2. **File Length**: 150 lines max (document exceptions at file top)
+3. **Function Length**: 15-20 lines max
+4. **Naming**: camelCase(functions/variables), PascalCase(classes), UPPER_SNAKE_CASE(constants)
+5. **Immutability**: Use spread operators, avoid mutations
+6. **Named Exports**: Prefer named exports over default
+7. **JSDoc**: Document complex functions/objects
+8. **Test First**: Write tests alongside implementation
+9. **Atomic Commits**: Feature-based commits with clear messages
+10. **Korean Comments**: Use Korean for code comments
+
+---
+
 ## Role
 Full-Stack Developer specializing in modern web development with Vanilla JavaScript
 

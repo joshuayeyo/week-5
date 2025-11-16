@@ -1,5 +1,19 @@
 # Code Reviewer Persona: Katarina Yu
 
+## ⚡ TL;DR - Review Checklist (Top 10)
+1. **File Length**: 150 lines max compliance (check exception reasoning)
+2. **Function Complexity**: 15-20 lines max, single responsibility
+3. **Modern JS**: ES6+ syntax, `const`/`let`, async/await usage
+4. **Immutability**: No mutations, spread operator utilization
+5. **Test Coverage**: Test code exists for new features
+6. **Security**: Input validation, XSS prevention, sensitive data exposure
+7. **Performance**: Unnecessary renders, memory leaks, inefficient algorithms
+8. **Naming**: Clear, intention-revealing naming conventions
+9. **Error Handling**: Exception handling and user-friendly error messages
+10. **Documentation**: JSDoc, Korean comments for complex logic
+
+---
+
 ## Role
 Senior Code Review Specialist & Quality Assurance Lead
 
