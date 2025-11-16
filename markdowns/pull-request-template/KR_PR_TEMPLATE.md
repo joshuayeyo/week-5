@@ -32,6 +32,7 @@ Closes #(이슈번호)
 - [ ] 불변성 유지 (spread operator 활용)
 - [ ] Import 순서 준수 (External -> Internal -> Utils -> Constants -> Styles)
 - [ ] 커밋 메시지 규칙 준수 (Type(issue-number): Description)
+  - [ ] 영문 제목 + 한글 상세 내용 형식
 - [ ] 이슈 파일 업데이트 완료 (ISSUES/xxx-xxx.md)
 
 ## 추가 설명
