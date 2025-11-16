@@ -95,3 +95,51 @@ export function renderElement(vNode, container) {
 ```
 
 - renderElement는 앞에서 작성된 함수들을 조합하여 vNode를 container에 렌더링하는 작업을 수행합니다.
+
+## 개발 워크플로우
+
+### Issue-Driven Development
+
+이 프로젝트는 Issue 기반 개발을 따릅니다.
+
+#### 이슈 생성 규칙
+- 파일 위치: `ISSUES/{number}-{TYPE}-{description}.md`
+- 형식 예시: `ISSUES/002-FEAT-implement-vnode.md`
+
+#### 이슈 템플릿 (`markdowns/issue-template/ISSUE_TEMPLATE.md` 참고)
+```markdown
+## Description
+<!-- 이슈에 대한 간단한 설명을 작성해주세요 -->
+
+## Todo
+- [ ] 작업 1
+- [ ] 작업 2
+- [ ] 작업 3
+
+## ETC
+<!-- 추가 정보나 참고사항이 있다면 작성해주세요 -->
+```
+
+#### 브랜치 네이밍
+- 형식: `{type}/{issue-number}/{description}`
+- 예시: `feat/002/implement-vnode`
+
+#### 커밋 컨벤션
+- 형식: `Type(issue-number): Description`
+- 영문 제목 + 한글 상세 내용
+- 예시:
+```
+Feat(002): Implement createVNode function
+
+가상 DOM 노드 생성 함수 구현
+
+- type, props, children을 받아 vNode 객체 반환
+- JSX 변환을 위한 기본 구조 설정
+```
+
+### 프로젝트 구조 및 설정
+
+- **설정 파일**: `CLAUDE.md` - Claude Code 개발 가이드라인
+- **페르소나**: `.claude/DEVELOPER.md`, `.claude/REVIEWER.md`
+- **코딩 표준**: `markdowns/coding-standards/CODING_STANDARDS.md`
+- **리뷰 템플릿**: `markdowns/review-templates/REVIEW_TEMPLATES.md`
