@@ -68,39 +68,23 @@ Note: Vitest unit tests are configured but E2E tests use Playwright.
 
 ## Development Workflow
 
-### Issue-Driven Development
-1. **Create Issue**: Document in `ISSUES/` directory with format `{number}-{TYPE}-{description}.md`
-2. **Branch Naming**: `{type}/{issue-number}/{description}` (e.g., `feat/003/add-calendar`)
-3. **Commit Convention**: `Type(issue-number): Description` with 3-digit issue numbers
-   ```
-   Feat(003): Add calendar month view component
+### Quick Reference
+- **Issues**: `ISSUES/{number}-{TYPE}-{description}.md` format
+- **Branches**: `{type}/{issue-number}/{description}`
+- **Commits**: `Type(issue-number): English title` + Korean body
+- **Reviews**: Use `markdowns/review-templates/REVIEW_TEMPLATES.md`
 
-   캘린더 월 뷰 컴포넌트 추가
-
-   - MonthView 컴포넌트 구현
-   - 월별 이벤트 표시 기능 추가
-   ```
-
-### Pre-commit Automation
-- **Husky**: Runs lint-staged on pre-commit
-- **Lint-staged**: Auto-formats with Prettier, lints with ESLint
-- **Import Order**: Enforced via `eslint-plugin-import`
-  1. External libraries
-  2. Internal components
-  3. Utility functions
-  4. Constants
-  5. Styles
-
-### Code Review Process
-- Use templates from `markdowns/review-templates/`
-- Follow multi-layered review methodology (see Developer Persona section)
+### Detailed Guidelines
+- **Full Workflow**: See `markdowns/dev-workflows/DEV_WORKFLOWS.md`
+- **Korean Guide**: See `markdowns/dev-workflows/KR_DEV_WORKFLOWS.md`
 
 ## Coding Standards
 
 **Primary Reference**: `markdowns/coding-standards/CODING_STANDARDS.md`
 
 ### Key Principles
-- **File Length**: Target 80 lines maximum (document exceptions at file top)
+- **File Length**: Target 150 lines maximum (document exceptions at file top)
+  - **Test files exempt**: E2E and integration test files may exceed this limit
 - **Function Length**: 15-20 lines maximum
 - **Naming**: camelCase (functions/variables), PascalCase (classes), UPPER_SNAKE_CASE (constants)
 - **Exports**: Prefer named exports over default
@@ -124,6 +108,56 @@ Note: Vitest unit tests are configured but E2E tests use Playwright.
 - File headers: English + Korean
 - Commit messages: English title, Korean body
 - Code comments: Prefer Korean
+
+## File Structure Templates
+
+### Component File Template
+```javascript
+// ComponentName.js - Component description
+// 컴포넌트 설명
+
+import { someUtility } from '../utils/helpers.js';
+import { CONSTANTS } from '../constants/index.js';
+
+/**
+ * ComponentName - 간단한 설명
+ * @param {Object} props - 프로퍼티 객체
+ */
+export const ComponentName = (props) => {
+  // 구현 로직
+};
+```
+
+### API File Template
+```javascript
+// api/userApi.js - User API functions
+// 사용자 API 함수들
+
+const BASE_URL = '/api/users';
+
+/**
+ * fetchUsers - 사용자 목록 조회
+ * @returns {Promise<Array>} 사용자 배열
+ */
+export const fetchUsers = async () => {
+  // API 호출 구현
+};
+```
+
+### Test File Template
+```javascript
+// ComponentName.test.js - ComponentName tests
+// ComponentName 테스트
+
+import { describe, it, expect } from 'vitest';
+import { ComponentName } from './ComponentName.js';
+
+describe('ComponentName', () => {
+  it('should render correctly', () => {
+    // 테스트 구현
+  });
+});
+```
 
 ## Important Notes
 
