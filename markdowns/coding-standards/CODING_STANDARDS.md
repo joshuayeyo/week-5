@@ -141,8 +141,9 @@ export { getDaysInMonth } from './dates/get-days-in-month.js';
 
 ### File Length
 
-- **Target**: Keep code files under **80 lines** including comments
-- **Exception handling**: If code exceeds 80 lines, add comment at the top explaining why
+- **Target**: Keep code files under **150 lines** including comments
+- **Exception handling**: If code exceeds 150 lines, add comment at the top explaining why
+- **Test file exemption**: E2E and integration test files may exceed this limit
 - **Exemptions**: Documentation files (.md, .json) are exempt
 
 ### File Documentation

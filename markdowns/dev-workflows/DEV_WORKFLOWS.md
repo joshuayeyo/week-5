@@ -124,7 +124,7 @@ Feat(003): Add calendar month view component
 
 ## File Organization Reminders
 
-- Keep files under 80 lines when possible
+- Keep files under 150 lines when possible (test files exempt)
 - Document reasons for longer files
 - Maintain consistent test file structure
 - Use clear, descriptive file paths

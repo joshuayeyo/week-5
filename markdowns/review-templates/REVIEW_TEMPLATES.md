@@ -34,7 +34,7 @@ AI-driven code review template for consistent quality assurance and documentatio
 #### ⚠️ Areas for Improvement
 
 - [ ] Function length (target: 15-20 lines)
-- [ ] File length (target: 80 lines including comments for code files: .ts, .tsx, .js, .jsx; excludes documentation files)
+- [ ] File length (target: 150 lines including comments for code files: .ts, .tsx, .js, .jsx; excludes documentation and test files)
 - [ ] Code complexity reduction
 - [ ] Better naming conventions
 - [ ] Missing error handling
@@ -60,7 +60,7 @@ AI-driven code review template for consistent quality assurance and documentatio
 
 #### File Organization
 
-- [ ] ✅ Under 80 lines (code files) or documented reason
+- [ ] ✅ Under 150 lines (code files) or documented reason
 - [ ] ✅ Proper file naming conventions
 - [ ] ✅ Correct directory structure
 - [ ] ✅ Props in separate type files (`src/types/`)
