@@ -20,6 +20,9 @@ export default mergeConfig(
       },
     },
     base,
+    alias: {
+      "@": resolve(__dirname, "src"),
+    },
     build: {
       rollupOptions: {
         input: {
